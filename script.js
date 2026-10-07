@@ -305,6 +305,7 @@ function renderComparisonCard(candidate) {
   );
   const dominant = getDominantLevel(comparisons);
   const pages = comparisons.flatMap((comparison) => getComparisonSources(comparison)).slice(0, 4);
+  const detailId = `comparison-detail-${candidate.id}`;
 
   return `
     <article class="comparison-card">
@@ -329,7 +330,7 @@ function renderComparisonCard(candidate) {
               .join("; ")}</p>`
           : ""
       }
-      <a class="button primary" href="#comparison-detail">Ver comparação</a>
+      <a class="button primary" href="#${detailId}">Ver comparação</a>
     </article>
   `;
 }
@@ -371,8 +372,10 @@ function renderMatrix(targets) {
 }
 
 function renderDetailedComparison(target) {
+  const detailId = `comparison-detail-${target.id}`;
+
   return `
-    <article class="comparison-card">
+    <article class="comparison-card detailed-comparison" id="${detailId}">
       <h3>${getCandidate(state.selectedCandidate).name} × ${target.name}</h3>
       ${state.priorities
         .map((categoryId) => {
