@@ -1,0 +1,11 @@
+{
+  "name": "comparador-propostas-2026",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Aplicacao estatica para comparar propostas de candidatos com base em programas de governo.",
+  "scripts": {
+    "validate": "node tools/validate.js"
+  },
+  "license": "UNLICENSED"
+}
+

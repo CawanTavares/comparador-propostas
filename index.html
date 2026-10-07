@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comparador de Propostas 2026</title>
+    <meta
+      name="description"
+      content="Ferramenta neutra para comparar propostas de candidatos com base em programas de governo."
+    >
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f4f7a'/%3E%3Cpath d='M18 18h28v6H18zm0 11h28v6H18zm0 11h18v6H18z' fill='white'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Início">
+        <span class="brand-mark">CP</span>
+        <span>Comparador 2026</span>
+      </a>
+      <nav class="top-nav" aria-label="Navegação principal">
+        <a href="#comparar">Comparar</a>
+        <a href="#explorar">Explorar</a>
+        <a href="#candidatos">Candidatos</a>
+        <a href="#fontes">Fontes</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
+      <div class="header-actions" aria-label="Ações rápidas">
+        <button class="small-button ghost-button" type="button" onclick="toggleContrast()">Alto contraste</button>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section id="inicio" class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Ferramenta informativa e neutra</p>
+          <h1>Compare as propostas. Decida por você.</h1>
+          <p class="lead">
+            Analise os programas de governo dos candidatos e descubra onde existem
+            semelhanças e diferenças.
+          </p>
+          <a class="button primary" href="#comparar">Começar comparação</a>
+        </div>
+        <aside class="notice">
+          <strong>Importante</strong>
+          <p>
+            Esta plataforma não recomenda candidatos. Ela compara propostas com base
+            nos programas de governo disponibilizados e permite que você avalie as
+            informações de acordo com suas próprias prioridades.
+          </p>
+          <p class="data-alert">
+            Base inicial extraída dos documentos oficiais informados. A análise pode ser ampliada com novas propostas catalogadas.
+          </p>
+        </aside>
+      </section>
+
+      <section id="comparar" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Passo 1</p>
+          <h2>Qual candidato você está considerando votar?</h2>
+          <p>Todos os candidatos recebem o mesmo tratamento visual. A escolha serve apenas como ponto de partida para a comparação.</p>
+        </div>
+        <div id="candidate-list" class="card-grid" aria-live="polite" aria-label="Lista de candidatos"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Passo 2</p>
+          <h2>Quais temas são mais importantes para você?</h2>
+          <p>Selecione até 5 categorias e ajuste a ordem das prioridades.</p>
+        </div>
+        <div id="priority-list" class="priority-list" aria-live="polite" aria-label="Categorias disponíveis"></div>
+        <div id="selected-priorities" class="selected-priorities" aria-live="polite" aria-label="Prioridades selecionadas"></div>
+      </section>
+
+      <section class="section results-section">
+        <div class="section-heading">
+          <p class="eyebrow">Passo 3</p>
+          <h2>Sua análise</h2>
+          <p>Os resultados são organizados de acordo com as prioridades selecionadas. Cada comparação mostra páginas, trechos e uma leitura técnica do ponto de convergência ou divergência.</p>
+        </div>
+        <div id="comparison-summary" class="empty-state">
+          Escolha um candidato e ao menos uma prioridade para visualizar a comparação.
+        </div>
+        <div id="matrix-container"></div>
+        <div id="comparison-detail"></div>
+      </section>
+
+      <section id="explorar" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Exploração</p>
+          <h2>Busca, filtros e visão por tema</h2>
+          <p>Use esta área para localizar propostas por palavra-chave, candidato, tema ou nível de convergência. A visão por tema coloca os candidatos lado a lado.</p>
+        </div>
+
+        <div class="tool-panel" aria-label="Filtros de propostas">
+          <label class="field">
+            <span>Buscar proposta</span>
+            <input id="search-input" type="search" placeholder="Ex.: saúde digital, educação, energia..." oninput="updateSearch(this.value)">
+          </label>
+          <label class="field">
+            <span>Candidato</span>
+            <select id="candidate-filter" onchange="updateFilter('candidate', this.value)">
+              <option value="">Todos</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Tema</span>
+            <select id="category-filter" onchange="updateFilter('category', this.value)">
+              <option value="">Todos</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Convergência</span>
+            <select id="level-filter" onchange="updateFilter('level', this.value)">
+              <option value="">Todas</option>
+              <option value="alta">Alta convergência</option>
+              <option value="parcial">Convergência parcial</option>
+              <option value="divergencia">Divergência</option>
+              <option value="sem_equivalente">Sem equivalente</option>
+              <option value="incerta">Convergência incerta</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="coverage-stats" class="coverage-grid" aria-live="polite"></div>
+        <div id="theme-view" class="theme-view" aria-live="polite"></div>
+        <div id="filtered-proposals" aria-live="polite"></div>
+      </section>
+
+      <section id="candidatos" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Consulta</p>
+          <h2>Propostas por candidato</h2>
+          <p>Confira as propostas organizadas por categoria e acesse suas fontes.</p>
+        </div>
+        <div id="candidate-proposals"></div>
+      </section>
+
+      <section id="fontes" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Transparência</p>
+          <h2>Fontes utilizadas</h2>
+        </div>
+        <div id="sources-list" class="card-grid"></div>
+      </section>
+
+      <section id="como-funciona" class="section how-it-works">
+        <div class="section-heading">
+          <p class="eyebrow">Metodologia</p>
+          <h2>Como funciona?</h2>
+        </div>
+        <ol class="steps">
+          <li>Os programas são obtidos das fontes indicadas.</li>
+          <li>As propostas são organizadas por tema, objetivo, mecanismo e trecho original.</li>
+          <li>Propostas relacionadas são comparadas quando há equivalência temática clara.</li>
+          <li>São identificadas convergências e divergências com explicação textual, não apenas por pontuação.</li>
+          <li>O usuário escolhe suas prioridades.</li>
+          <li>O sistema organiza os resultados de acordo com essas prioridades.</li>
+        </ol>
+        <div class="method-grid">
+          <article>
+            <h3>Alta convergência</h3>
+            <p>Usada quando os programas tratam do mesmo problema com objetivos próximos e mecanismos comparáveis. Diferenças de linguagem não impedem essa classificação quando a política pública é semelhante.</p>
+          </article>
+          <article>
+            <h3>Convergência parcial</h3>
+            <p>Usada quando existe tema ou objetivo comum, mas há diferenças relevantes nos instrumentos, público-alvo, escala, desenho institucional ou prioridade dada ao assunto.</p>
+          </article>
+          <article>
+            <h3>Divergência</h3>
+            <p>Usada quando as propostas seguem direções substancialmente diferentes ou quando o mecanismo de uma proposta altera de forma importante o resultado esperado em relação à outra.</p>
+          </article>
+          <article>
+            <h3>Sem equivalente</h3>
+            <p>Usada quando a base catalogada não identificou uma proposta comparável no documento analisado. Isso não significa oposição ao tema; significa apenas ausência de equivalência documentada.</p>
+          </article>
+        </div>
+        <div class="notice">
+          <strong>Limitações da análise</strong>
+          <p>
+            Programas de governo podem utilizar conceitos, níveis de detalhamento e
+            estruturas diferentes. Por isso, uma proposta pode ter baixa comparabilidade
+            mesmo quando os candidatos abordam um problema semelhante.
+          </p>
+          <p>
+            A ausência de uma proposta equivalente não significa necessariamente que o
+            candidato seja contra aquele tema; significa apenas que não foi identificada
+            uma proposta equivalente no documento analisado.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Ferramenta de comparação programática. A decisão final é sempre do eleitor.</p>
+    </footer>
+
+    <script src="data/dados.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

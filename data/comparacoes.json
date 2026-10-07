@@ -1,0 +1,860 @@
+[
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "seguranca-publica",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam do enfrentamento ao crime organizado e da asfixia financeira de facções. A diferença principal está no enquadramento e no tom: Flávio Bolsonaro propõe classificar facções como organizações narcoterroristas, enquanto Lula enfatiza cooperação federativa, Lei Antifacção e programa nacional de segurança.",
+    "proposalIds": [
+      "flavio-seguranca-001",
+      "lula-seguranca-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "seguranca-publica",
+    "level": "alta",
+    "explanation": "As propostas possuem alta convergência no foco em facções, retomada territorial, fronteiras, asfixia financeira e endurecimento do tratamento ao crime organizado, embora Renan Santos use um desenho jurídico próprio e mais detalhado.",
+    "proposalIds": [
+      "flavio-seguranca-001",
+      "renan-seguranca-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "seguranca-publica",
+    "level": "parcial",
+    "explanation": "Os dois tratam de segurança com tecnologia e integração, mas Flávio Bolsonaro concentra a proposta em facções e punição, enquanto Augusto Cury prioriza integração operacional, prevenção, inteligência e apoio municipal.",
+    "proposalIds": [
+      "flavio-seguranca-001",
+      "augusto-seguranca-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "seguranca-publica",
+    "level": "parcial",
+    "explanation": "Ambos abordam crime organizado, retomada territorial e asfixia financeira. Divergem no desenho jurídico e institucional: Lula preserva linguagem de cooperação federativa e Estado Democrático de Direito, enquanto Renan propõe Guerra ao Crime e Lei Antifacção com medidas excepcionais.",
+    "proposalIds": [
+      "lula-seguranca-001",
+      "renan-seguranca-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "seguranca-publica",
+    "level": "parcial",
+    "explanation": "Existe convergência no uso de integração, inteligência e tecnologia. Lula foca no crime organizado e em cooperação entre entes federativos; Augusto Cury organiza a proposta como um sistema de segurança 4.0 com FOCO municipal e centro integrado de inteligência.",
+    "proposalIds": [
+      "lula-seguranca-001",
+      "augusto-seguranca-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "seguranca-publica",
+    "level": "parcial",
+    "explanation": "Ambos defendem integração de dados e tecnologia, mas Renan Santos enfatiza um enfrentamento jurídico-operacional mais duro contra facções, enquanto Augusto Cury organiza a proposta como sistema preventivo e integrado.",
+    "proposalIds": [
+      "augusto-seguranca-001",
+      "renan-seguranca-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "saude",
+    "level": "parcial",
+    "explanation": "Ambos tratam de ampliação de acesso e prevenção. Flávio Bolsonaro enfatiza tabela SUS, atenção básica, idosos e uso de capacidade privada ociosa; Lula enfatiza prontuário único, teleatendimento, integração de dados e IA no SUS.",
+    "proposalIds": [
+      "flavio-saude-001",
+      "lula-saude-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "saude",
+    "level": "parcial",
+    "explanation": "Há convergência no objetivo de ampliar acesso, mas os mecanismos diferem. Flávio Bolsonaro prioriza atenção básica, prevenção e remuneração SUS; Augusto Cury concentra a proposta em telemedicina nacional e atendimento digital rápido.",
+    "proposalIds": [
+      "flavio-saude-001",
+      "augusto-saude-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "saude",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam de acesso e organização do atendimento. Flávio Bolsonaro propõe ampliar atenção básica e prevenção; Renan Santos propõe sistema digital, PRONTO, ENER e telemedicina com IA.",
+    "proposalIds": [
+      "flavio-saude-001",
+      "renan-saude-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "saude",
+    "level": "alta",
+    "explanation": "As propostas convergem fortemente no uso de saúde digital, teleatendimento e inteligência artificial para reduzir filas e ampliar acesso, embora Lula detalhe integração ao SUS e Augusto Cury estabeleça uma meta de atendimento digital em até 30 minutos.",
+    "proposalIds": [
+      "lula-saude-001",
+      "augusto-saude-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "saude",
+    "level": "alta",
+    "explanation": "Há alta convergência no uso de prontuário eletrônico, telemedicina, inteligência artificial e integração de sistemas de saúde. As diferenças estão no desenho institucional e nos nomes dos instrumentos.",
+    "proposalIds": [
+      "lula-saude-001",
+      "renan-saude-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "saude",
+    "level": "alta",
+    "explanation": "Os dois programas propõem saúde digital em escala nacional, com telemedicina e inteligência artificial para triagem, redução de filas e organização do atendimento.",
+    "proposalIds": [
+      "augusto-saude-001",
+      "renan-saude-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "educacao",
+    "level": "parcial",
+    "explanation": "Ambos tratam de alfabetização e educação básica, mas Flávio Bolsonaro prioriza método fônico, reforço e gestão por resultados, enquanto Lula foca metas do PNE, alfabetização na idade certa, creches e tempo integral.",
+    "proposalIds": [
+      "flavio-educacao-001",
+      "lula-educacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "educacao",
+    "level": "alta",
+    "explanation": "As propostas convergem em método fônico, disciplina escolar e foco em resultados, ainda que Renan Santos detalhe código de conduta e ranking de disciplina como mecanismos centrais.",
+    "proposalIds": [
+      "flavio-educacao-001",
+      "renan-educacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "educacao",
+    "level": "parcial",
+    "explanation": "Há convergência no reconhecimento de problemas de aprendizagem e formação. Flávio Bolsonaro enfatiza método, indicadores e competências digitais; Augusto Cury enfatiza saúde emocional, pensamento crítico e formação humana.",
+    "proposalIds": [
+      "flavio-educacao-001",
+      "augusto-educacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "educacao",
+    "level": "parcial",
+    "explanation": "Os dois tratam de educação como eixo estrutural, mas Lula detalha metas de acesso e alfabetização, enquanto Augusto Cury propõe mudança pedagógica ampla centrada em saúde emocional e pensamento crítico.",
+    "proposalIds": [
+      "lula-educacao-001",
+      "augusto-educacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "educacao",
+    "level": "parcial",
+    "explanation": "Ambos tratam de alfabetização e educação básica, mas os mecanismos diferem bastante: Lula prioriza cooperação federativa, creches e tempo integral; Renan Santos enfatiza disciplina, método fônico e centralização de competências.",
+    "proposalIds": [
+      "lula-educacao-001",
+      "renan-educacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "educacao",
+    "level": "parcial",
+    "explanation": "Ambos defendem reforma educacional, mas com focos distintos: Augusto Cury prioriza saúde emocional e formação integral; Renan Santos prioriza disciplina, alfabetização fônica e alinhamento estratégico.",
+    "proposalIds": [
+      "augusto-educacao-001",
+      "renan-educacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "economia",
+    "level": "divergencia",
+    "explanation": "Os programas partem de mecanismos econômicos diferentes. Flávio Bolsonaro enfatiza redução de impostos, regras fiscais e revisão tributária; Lula enfatiza crescimento com inclusão, investimento público e privado, neoindustrialização e manutenção do arcabouço fiscal.",
+    "proposalIds": [
+      "flavio-economia-001",
+      "lula-economia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "economia",
+    "level": "parcial",
+    "explanation": "Há convergência em reformas e produtividade, mas Renan Santos inclui substituição do Bolsa Família por Frentes Cidadãs e reforma ampla de incentivos, enquanto Flávio Bolsonaro foca equilíbrio fiscal e redução tributária.",
+    "proposalIds": [
+      "flavio-economia-001",
+      "renan-economia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "economia",
+    "level": "parcial",
+    "explanation": "Ambos buscam crescimento e competitividade, mas por mecanismos distintos: Flávio Bolsonaro prioriza fiscal e tributos; Augusto Cury prioriza exportação, industrialização e inserção em cadeias globais.",
+    "proposalIds": [
+      "flavio-economia-001",
+      "augusto-economia-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "economia",
+    "level": "parcial",
+    "explanation": "Existe convergência na ênfase em indústria, inovação e exportações. Lula estrutura isso em neoindustrialização e política econômica inclusiva; Augusto Cury foca transformação do Brasil em potência exportadora.",
+    "proposalIds": [
+      "lula-economia-001",
+      "augusto-economia-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "economia",
+    "level": "divergencia",
+    "explanation": "Os objetivos de crescimento e produtividade aparecem nos dois programas, mas os mecanismos são substancialmente diferentes: Lula mantém proteção social e política industrial; Renan propõe reforma do assistencialismo e substituição do Bolsa Família por Frentes Cidadãs.",
+    "proposalIds": [
+      "lula-economia-001",
+      "renan-economia-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "economia",
+    "level": "parcial",
+    "explanation": "Ambos buscam aumento de produtividade e transformação econômica, mas Augusto Cury enfatiza exportação e industrialização, enquanto Renan Santos enfatiza reformas microeconômicas e alteração dos incentivos assistenciais.",
+    "proposalIds": [
+      "augusto-economia-001",
+      "renan-economia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "agricultura",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam de crédito, seguro, irrigação e produtividade no campo. Lula enfatiza Plano Safra e resiliência climática; Flávio Bolsonaro enfatiza logística, seguro rural e armazenagem.",
+    "proposalIds": [
+      "flavio-agricultura-001",
+      "lula-agricultura-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "agricultura",
+    "level": "parcial",
+    "explanation": "Ambos tratam de agregar valor à produção e fortalecer cadeias do campo. Flávio Bolsonaro foca logística, seguro e armazenagem; Augusto Cury foca instalação de agroindústrias.",
+    "proposalIds": [
+      "flavio-agricultura-001",
+      "augusto-agricultura-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "agricultura",
+    "level": "parcial",
+    "explanation": "Há convergência em competitividade do agro e agregação de valor. Flávio Bolsonaro destaca corredores logísticos e seguro rural; Renan Santos propõe AgroBrasil 2030 com fertilizantes, segurança jurídica e agroindústria.",
+    "proposalIds": [
+      "flavio-agricultura-001",
+      "renan-agricultura-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "agricultura",
+    "level": "parcial",
+    "explanation": "Ambos buscam modernizar o campo, mas Lula enfatiza crédito rural, Plano Safra e resiliência climática, enquanto Augusto Cury enfatiza agroindustrialização e valor agregado.",
+    "proposalIds": [
+      "lula-agricultura-001",
+      "augusto-agricultura-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "agricultura",
+    "level": "parcial",
+    "explanation": "Os dois abordam produtividade e modernização rural, mas divergem em pontos de reforma agrária e segurança jurídica. Lula defende avanço em reforma agrária e crédito; Renan propõe auditoria e produtivização de assentamentos já existentes.",
+    "proposalIds": [
+      "lula-agricultura-001",
+      "renan-agricultura-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "agricultura",
+    "level": "alta",
+    "explanation": "As propostas convergem fortemente na agenda de agroindustrialização, agregação de valor e transformação do agro em plataforma exportadora, embora Renan inclua pilares regulatórios e fundiários mais detalhados.",
+    "proposalIds": [
+      "augusto-agricultura-001",
+      "renan-agricultura-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "energia",
+    "level": "parcial",
+    "explanation": "Ambos tratam de segurança energética, renováveis e biocombustíveis. Flávio Bolsonaro enfatiza menor custo, gás, data centers e armazenamento; Lula enfatiza transição justa, transmissão, renováveis e descarbonização.",
+    "proposalIds": [
+      "flavio-energia-001",
+      "lula-energia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "energia",
+    "level": "parcial",
+    "explanation": "Há convergência em energia limpa e hidrogênio, mas Flávio Bolsonaro também enfatiza gás, refino e custo ao consumidor; Augusto Cury prioriza energia limpa e liderança global em hidrogênio verde.",
+    "proposalIds": [
+      "flavio-energia-001",
+      "augusto-energia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "energia",
+    "level": "parcial",
+    "explanation": "Ambos tratam de infraestrutura energética, transmissão e hidrogênio. Flávio Bolsonaro apresenta uma agenda ampla de segurança energética e custo; Renan Santos vincula energia ao programa de infraestrutura Missão Rondon.",
+    "proposalIds": [
+      "flavio-energia-001",
+      "renan-energia-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "energia",
+    "level": "alta",
+    "explanation": "Os dois programas convergem em renováveis, hidrogênio e transição energética. Lula enfatiza transição justa e integração ao sistema elétrico; Augusto Cury enfatiza liderança global em energia limpa.",
+    "proposalIds": [
+      "lula-energia-001",
+      "augusto-energia-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "energia",
+    "level": "parcial",
+    "explanation": "Ambos tratam de transmissão e hidrogênio, mas Lula apresenta a agenda dentro da transição energética justa e descarbonização; Renan Santos vincula o tema a gargalos de infraestrutura e energia estratégica.",
+    "proposalIds": [
+      "lula-energia-001",
+      "renan-energia-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "energia",
+    "level": "parcial",
+    "explanation": "As propostas se aproximam no hidrogênio verde e na visão estratégica de energia. Augusto Cury foca plataforma de energia limpa; Renan Santos foca transmissão, Angra 3 e infraestrutura energética.",
+    "proposalIds": [
+      "augusto-energia-001",
+      "renan-energia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "meio-ambiente",
+    "level": "parcial",
+    "explanation": "Ambos tratam de carbono, preservação e instrumentos econômicos ambientais. Lula enfatiza desmatamento líquido zero e financiamento climático; Flávio Bolsonaro enfatiza mercado de carbono, bioeconomia e pagamento por serviços ambientais.",
+    "proposalIds": [
+      "flavio-meio-ambiente-001",
+      "lula-meio-ambiente-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "meio-ambiente",
+    "level": "parcial",
+    "explanation": "Os dois programas usam instrumentos tecnológicos/econômicos para preservação. Flávio Bolsonaro enfatiza mercado de carbono e remuneração ambiental; Augusto Cury enfatiza combate a incêndios com IA, satélites e drones.",
+    "proposalIds": [
+      "flavio-meio-ambiente-001",
+      "augusto-meio-ambiente-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "meio-ambiente",
+    "level": "parcial",
+    "explanation": "Ambos tratam de proteção ambiental, mas Lula foca desmatamento líquido zero e financiamento climático, enquanto Augusto Cury foca monitoramento e resposta a incêndios com tecnologia.",
+    "proposalIds": [
+      "lula-meio-ambiente-001",
+      "augusto-meio-ambiente-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "habitacao",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam de moradia e regularização, mas por caminhos diferentes. Flávio Bolsonaro propõe retomar o Casa Verde e Amarela com meta de residências; Lula propõe usar imóveis da União para habitação e regularização.",
+    "proposalIds": [
+      "flavio-habitacao-001",
+      "lula-habitacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "habitacao",
+    "level": "parcial",
+    "explanation": "Há convergência em regularização fundiária e transformação da moradia em patrimônio. Flávio Bolsonaro trata de Casa Verde e Amarela; Augusto Cury integra regularização a empreendedorismo e urbanização 4.0.",
+    "proposalIds": [
+      "flavio-habitacao-001",
+      "augusto-habitacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "habitacao",
+    "level": "parcial",
+    "explanation": "Ambos tratam de formalização territorial e moradia, mas Renan Santos propõe desfavelização integral em dez anos, enquanto Flávio Bolsonaro propõe programa habitacional, urbanização e regularização.",
+    "proposalIds": [
+      "flavio-habitacao-001",
+      "renan-habitacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "habitacao",
+    "level": "parcial",
+    "explanation": "Ambos abordam regularização e uso social do território. Lula propõe destinação de imóveis da União; Augusto Cury propõe regularização fundiária e instrumentos econômicos para comunidades.",
+    "proposalIds": [
+      "lula-habitacao-001",
+      "augusto-habitacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "habitacao",
+    "level": "parcial",
+    "explanation": "Existe tema comum em regularização e moradia, mas a escala e o mecanismo são diferentes: Lula fala em imóveis da União e regularização; Renan propõe marco nacional de desfavelização.",
+    "proposalIds": [
+      "lula-habitacao-001",
+      "renan-habitacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "habitacao",
+    "level": "alta",
+    "explanation": "As propostas convergem fortemente em regularização fundiária, uso de tecnologia territorial e transformação de comunidades/favelas em espaços formais, embora Renan Santos proponha um marco de desfavelização mais amplo.",
+    "proposalIds": [
+      "augusto-habitacao-001",
+      "renan-habitacao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "administracao-publica",
+    "level": "alta",
+    "explanation": "Ambos propõem ampliar serviços públicos digitais e reduzir burocracia para o cidadão. As diferenças estão na ênfase: Flávio Bolsonaro foca digitalização integral e IA de atendimento; Lula inclui letramento digital, soberania digital e infraestrutura pública de dados.",
+    "proposalIds": [
+      "flavio-administracao-001",
+      "lula-administracao-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "administracao-publica",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam de reforma do Estado, mas com mecanismos diferentes: Flávio Bolsonaro foca digitalização e eficiência; Renan Santos foca consolidação municipal e reorganização administrativa do território.",
+    "proposalIds": [
+      "flavio-administracao-001",
+      "renan-administracao-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "administracao-publica",
+    "level": "parcial",
+    "explanation": "Ambos tratam de capacidade estatal, mas com enfoques distintos. Lula propõe infraestrutura digital, letramento e governança federativa; Renan propõe fusão de municípios inviáveis e nova disciplina do FPM.",
+    "proposalIds": [
+      "lula-administracao-001",
+      "renan-administracao-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "relacoes-internacionais",
+    "level": "parcial",
+    "explanation": "Ambos propõem maior projeção internacional do Brasil, mas Augusto Cury foca diplomacia econômica e embaixadas empreendedoras, enquanto Renan Santos foca soberania, liderança regional e estratégia geopolítica.",
+    "proposalIds": [
+      "augusto-relacoes-001",
+      "renan-relacoes-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "tecnologia-inovacao",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam de inteligência artificial e data centers. Flávio Bolsonaro vincula IA a produtividade, GovTech e serviços públicos; Renan Santos propõe um marco nacional de IA com incentivos fiscais, retenção de talentos e zonas econômicas específicas.",
+    "proposalIds": [
+      "flavio-tecnologia-001",
+      "renan-tecnologia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "tecnologia-inovacao",
+    "level": "parcial",
+    "explanation": "Ambos priorizam IA e economia digital, mas Flávio enfatiza difusão produtiva, GovTech e liberdade para inovar, enquanto Lula articula soberania digital, infraestrutura computacional nacional, dados e salvaguardas socioambientais.",
+    "proposalIds": [
+      "flavio-tecnologia-001",
+      "lula-tecnologia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "tecnologia-inovacao",
+    "level": "alta",
+    "explanation": "Os dois programas tratam IA e tecnologia como instrumentos de produtividade, modernização do Estado e competitividade, com diferença de ênfase: Flávio foca empresas e patentes; Augusto detalha CT&I, marco legal e universidades.",
+    "proposalIds": [
+      "flavio-tecnologia-001",
+      "augusto-tecnologia-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "tecnologia-inovacao",
+    "level": "alta",
+    "explanation": "Ambos defendem soberania tecnológica, IA, investimento em CT&I e conexão entre Estado, universidades e setor produtivo. Lula detalha infraestrutura digital e economia de dados; Augusto enfatiza marco legal, universidades e inclusão tecnológica.",
+    "proposalIds": [
+      "lula-tecnologia-001",
+      "augusto-tecnologia-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "tecnologia-inovacao",
+    "level": "parcial",
+    "explanation": "Os dois reconhecem tecnologia como área estratégica. Lula enfatiza soberania digital, IA brasileira, nuvem e dados; Renan foca marco de IA e tecnologias críticas ligadas à produtividade e defesa.",
+    "proposalIds": [
+      "lula-tecnologia-001",
+      "renan-tecnologia-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "emprego-trabalho",
+    "level": "parcial",
+    "explanation": "Ambos tratam trabalho formal e proteção na economia contemporânea, mas por vias diferentes: Flávio propõe reduzir custo do emprego e flexibilizar contratação; Lula enfatiza valorização do trabalho, proteção social e regulação da economia digital.",
+    "proposalIds": [
+      "flavio-trabalho-001",
+      "lula-trabalho-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "emprego-trabalho",
+    "level": "parcial",
+    "explanation": "Os dois focam inserção produtiva e entrada no mercado. Flávio detalha custo do trabalho, primeiro emprego e banco de vagas; Augusto enfatiza juventude, aprendizagem tecnológica, empreendedorismo e inovação.",
+    "proposalIds": [
+      "flavio-trabalho-001",
+      "augusto-trabalho-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "emprego-trabalho",
+    "level": "parcial",
+    "explanation": "Ambos associam trabalho a produtividade e autonomia. Flávio trabalha formalização e intermediação de vagas; Renan vincula emprego a frentes de trabalho e reforma de produtividade.",
+    "proposalIds": [
+      "flavio-trabalho-001",
+      "renan-trabalho-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "emprego-trabalho",
+    "level": "parcial",
+    "explanation": "Há convergência na preocupação com novas tecnologias e trabalho, mas Lula enfatiza proteção e valorização do trabalho, enquanto Augusto prioriza inserção juvenil, empreendedorismo e capacitação tecnológica.",
+    "proposalIds": [
+      "lula-trabalho-001",
+      "augusto-trabalho-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "emprego-trabalho",
+    "level": "divergencia",
+    "explanation": "Os programas partem de diagnósticos distintos: Lula enfatiza valorização e proteção trabalhista, inclusive na economia digital; Renan propõe reorientar assistência e emprego para frentes de trabalho e produtividade.",
+    "proposalIds": [
+      "lula-trabalho-001",
+      "renan-trabalho-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "emprego-trabalho",
+    "level": "parcial",
+    "explanation": "Ambos ligam trabalho a produtividade e novas formas de inserção econômica. Augusto destaca juventude, aprendizagem e empreendedorismo; Renan concentra a proposta em frentes de trabalho e agenda nacional de produtividade.",
+    "proposalIds": [
+      "augusto-trabalho-001",
+      "renan-trabalho-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "infraestrutura",
+    "level": "parcial",
+    "explanation": "Ambos tratam infraestrutura como vetor de crescimento e emprego. Flávio enfatiza investimento privado, segurança jurídica e licenciamento ágil; Lula estrutura a agenda pelo Novo PAC, concessões e obras públicas.",
+    "proposalIds": [
+      "flavio-infraestrutura-001",
+      "lula-infraestrutura-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "infraestrutura",
+    "level": "alta",
+    "explanation": "Os dois defendem infraestrutura como base de competitividade, com concessões, segurança jurídica, logística e redução de custos. Augusto detalha saneamento e conectividade; Flávio enfatiza investimento privado e regras claras.",
+    "proposalIds": [
+      "flavio-infraestrutura-001",
+      "augusto-infraestrutura-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "infraestrutura",
+    "level": "alta",
+    "explanation": "Há convergência em infraestrutura orientada por execução, investimento privado, segurança jurídica e logística nacional. Renan detalha a Missão Rondon com obras e modais; Flávio aborda infraestrutura como sustentação do crescimento.",
+    "proposalIds": [
+      "flavio-infraestrutura-001",
+      "renan-infraestrutura-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "infraestrutura",
+    "level": "parcial",
+    "explanation": "Ambos priorizam logística, obras, conectividade e saneamento. Lula concentra a estratégia no Novo PAC e na articulação público-privada; Augusto propõe concessões, PPPs e programa nacional de integração logística.",
+    "proposalIds": [
+      "lula-infraestrutura-001",
+      "augusto-infraestrutura-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "infraestrutura",
+    "level": "parcial",
+    "explanation": "Os dois defendem investimentos em logística, ferrovias, rodovias e energia. Lula usa o Novo PAC e concessões; Renan formula a Missão Rondon com disciplina técnica, fiscal e metas de modais.",
+    "proposalIds": [
+      "lula-infraestrutura-001",
+      "renan-infraestrutura-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "infraestrutura",
+    "level": "alta",
+    "explanation": "Ambos dão peso a logística, concessões, PPPs, conectividade, saneamento e capacidade técnica de execução. Renan é mais específico em obras e modais; Augusto agrega saneamento e infraestrutura digital.",
+    "proposalIds": [
+      "augusto-infraestrutura-001",
+      "renan-infraestrutura-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "meio-ambiente",
+    "level": "parcial",
+    "explanation": "Ambos relacionam meio ambiente a produção e licenciamento. Flávio trata mercado de carbono e pagamento por serviços ambientais; Renan aparece de forma correlata em licenciamento, mineração responsável e baixo carbono.",
+    "proposalIds": [
+      "flavio-meio-ambiente-001",
+      "renan-meio-ambiente-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "meio-ambiente",
+    "level": "parcial",
+    "explanation": "Lula apresenta agenda ambiental ampla de desmatamento, clima e financiamento; Renan traz uma agenda ambiental indireta, associada a licenciamento, infraestrutura, mineração responsável e baixo carbono.",
+    "proposalIds": [
+      "lula-meio-ambiente-001",
+      "renan-meio-ambiente-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "meio-ambiente",
+    "level": "parcial",
+    "explanation": "Augusto propõe programas ambientais explícitos, como Floresta Viva-BR; Renan aborda elementos ambientais por meio de licenciamento, desenvolvimento sustentável e baixo carbono.",
+    "proposalIds": [
+      "augusto-meio-ambiente-001",
+      "renan-meio-ambiente-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "lula",
+    "category": "relacoes-internacionais",
+    "level": "divergencia",
+    "explanation": "Ambos tratam abertura de mercados e inserção externa, mas com visões diferentes: Flávio critica alinhamentos ideológicos e propõe diplomacia pragmática voltada ao comércio; Lula enfatiza política externa universalista, integração regional, Sul Global e multilateralismo.",
+    "proposalIds": [
+      "flavio-relacoes-001",
+      "lula-relacoes-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "relacoes-internacionais",
+    "level": "parcial",
+    "explanation": "Há convergência no uso da diplomacia para comércio, investimento e abertura de mercados. Flávio enfatiza pragmatismo anti-ideológico; Augusto propõe embaixadas empreendedoras e diplomacia econômica ativa.",
+    "proposalIds": [
+      "flavio-relacoes-001",
+      "augusto-relacoes-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "renan-santos",
+    "category": "relacoes-internacionais",
+    "level": "parcial",
+    "explanation": "Ambos defendem pragmatismo e interesse nacional nas relações externas. Flávio coloca foco em comércio e investimentos; Renan enfatiza liderança regional, defesa e alianças estratégicas.",
+    "proposalIds": [
+      "flavio-relacoes-001",
+      "renan-relacoes-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "relacoes-internacionais",
+    "level": "parcial",
+    "explanation": "Ambos associam política externa a desenvolvimento, mercados e cooperação. Lula enfatiza multilateralismo, integração regional e Sul Global; Augusto organiza a diplomacia como instrumento empreendedor e comercial.",
+    "proposalIds": [
+      "lula-relacoes-001",
+      "augusto-relacoes-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "renan-santos",
+    "category": "relacoes-internacionais",
+    "level": "parcial",
+    "explanation": "Os dois tratam integração regional e presença externa estratégica, mas Lula enfatiza multilateralismo, Sul Global e cooperação; Renan foca pragmatismo, defesa, tecnologia e liderança regional.",
+    "proposalIds": [
+      "lula-relacoes-001",
+      "renan-relacoes-001"
+    ]
+  },
+  {
+    "baseCandidate": "flavio-bolsonaro",
+    "targetCandidate": "augusto-cury",
+    "category": "administracao-publica",
+    "level": "alta",
+    "explanation": "Ambos defendem governo digital, redução de filas e uso de tecnologia para melhorar a relação do cidadão com o Estado. Flávio detalha digitalização integral; Augusto agrega avaliação por indicadores.",
+    "proposalIds": [
+      "flavio-administracao-001",
+      "augusto-administracao-001"
+    ]
+  },
+  {
+    "baseCandidate": "lula",
+    "targetCandidate": "augusto-cury",
+    "category": "administracao-publica",
+    "level": "parcial",
+    "explanation": "Ambos tratam digitalização e modernização estatal. Lula enfatiza soberania digital e infraestrutura pública digital; Augusto destaca plataformas integradas e avaliação contínua de políticas.",
+    "proposalIds": [
+      "lula-administracao-001",
+      "augusto-administracao-001"
+    ]
+  },
+  {
+    "baseCandidate": "renan-santos",
+    "targetCandidate": "augusto-cury",
+    "category": "administracao-publica",
+    "level": "parcial",
+    "explanation": "Os dois defendem profissionalização e eficiência administrativa. Renan propõe reorganização municipal e critérios de sustentabilidade; Augusto foca governo digital, indicadores e metas ministeriais.",
+    "proposalIds": [
+      "renan-administracao-001",
+      "augusto-administracao-001"
+    ]
+  },
+  {
+    "baseCandidate": "augusto-cury",
+    "targetCandidate": "renan-santos",
+    "category": "tecnologia-inovacao",
+    "level": "parcial",
+    "explanation": "Os dois programas tratam tecnologia como área estratégica para competitividade. Augusto Cury enfatiza política nacional de IA, CT&I, universidades e inclusão tecnológica; Renan Santos organiza a agenda por marco de IA, tecnologias críticas, defesa e produtividade.",
+    "proposalIds": [
+      "augusto-tecnologia-001",
+      "renan-tecnologia-001"
+    ]
+  }
+]

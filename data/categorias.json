@@ -1,0 +1,17 @@
+[
+  { "id": "economia", "name": "Economia" },
+  { "id": "seguranca-publica", "name": "Segurança Pública" },
+  { "id": "saude", "name": "Saúde" },
+  { "id": "educacao", "name": "Educação" },
+  { "id": "emprego-trabalho", "name": "Emprego e Trabalho" },
+  { "id": "infraestrutura", "name": "Infraestrutura" },
+  { "id": "meio-ambiente", "name": "Meio Ambiente" },
+  { "id": "tecnologia-inovacao", "name": "Tecnologia e Inovação" },
+  { "id": "assistencia-social", "name": "Assistência Social" },
+  { "id": "agricultura", "name": "Agricultura" },
+  { "id": "relacoes-internacionais", "name": "Relações Internacionais" },
+  { "id": "administracao-publica", "name": "Administração Pública" },
+  { "id": "justica-instituicoes", "name": "Justiça e Instituições" },
+  { "id": "habitacao", "name": "Habitação" },
+  { "id": "energia", "name": "Energia" }
+]

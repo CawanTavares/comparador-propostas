@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Testes - Comparador de Propostas 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .test-shell {
+        width: min(980px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 40px 0;
+      }
+
+      .test-result {
+        display: grid;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .test-item {
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+      }
+
+      .test-pass {
+        border-color: var(--high);
+      }
+
+      .test-fail {
+        border-color: var(--divergent);
+      }
+
+      .hidden-fixtures {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="test-shell">
+      <p class="eyebrow">Validação técnica</p>
+      <h1>Testes do Comparador</h1>
+      <p>
+        Esta página executa uma bateria de testes das funções principais do app:
+        seleção, prioridades, comparação, filtros, visão por tema, acessibilidade do
+        botão expansível e alto contraste.
+      </p>
+      <button class="button primary" type="button" onclick="runTests()">Rodar testes novamente</button>
+      <div id="test-summary" class="notice" aria-live="polite">Aguardando execução dos testes...</div>
+      <div id="test-results" class="test-result" aria-live="polite"></div>
+    </main>
+
+    <div class="hidden-fixtures" aria-hidden="true">
+      <div id="candidate-list"></div>
+      <div id="priority-list"></div>
+      <div id="selected-priorities"></div>
+      <div id="comparison-summary"></div>
+      <div id="matrix-container"></div>
+      <div id="comparison-detail"></div>
+      <div id="candidate-proposals"></div>
+      <div id="sources-list"></div>
+      <select id="candidate-filter"></select>
+      <select id="category-filter"></select>
+      <select id="level-filter"></select>
+      <div id="coverage-stats"></div>
+      <div id="theme-view"></div>
+      <div id="filtered-proposals"></div>
+    </div>
+
+    <script src="data/dados.js"></script>
+    <script src="script.js"></script>
+    <script>
+      const testResults = [];
+
+      function assertTest(name, condition, details = "") {
+        testResults.push({ name, passed: Boolean(condition), details });
+      }
+
+      function renderTestResults() {
+        const passed = testResults.filter((test) => test.passed).length;
+        const failed = testResults.length - passed;
+
+        document.querySelector("#test-summary").innerHTML = `
+          <strong>${failed === 0 ? "Todos os testes passaram." : "Alguns testes falharam."}</strong>
+          <p>${passed}/${testResults.length} testes aprovados.</p>
+        `;
+
+        document.querySelector("#test-results").innerHTML = testResults
+          .map(
+            (test) => `
+              <div class="test-item ${test.passed ? "test-pass" : "test-fail"}">
+                <strong>${test.passed ? "OK" : "Falha"} - ${test.name}</strong>
+                ${test.details ? `<p>${test.details}</p>` : ""}
+              </div>
+            `
+          )
+          .join("");
+      }
+
+      function waitForAppReady() {
+        return new Promise((resolve) => {
+          const started = Date.now();
+          const timer = setInterval(() => {
+            const ready =
+              document.querySelectorAll("#candidate-list button").length ===
+              window.APP_DATA.candidates.length;
+
+            if (ready || Date.now() - started > 3000) {
+              clearInterval(timer);
+              resolve();
+            }
+          }, 40);
+        });
+      }
+
+      async function runTests() {
+        testResults.length = 0;
+        await waitForAppReady();
+
+        assertTest("Dados carregados", window.APP_DATA.proposals.length > 0 && window.APP_DATA.comparisons.length > 0);
+        assertTest("Candidatos renderizados", document.querySelectorAll("#candidate-list button").length === window.APP_DATA.candidates.length);
+        assertTest("Fontes renderizadas", document.querySelectorAll("#sources-list .source-card").length === window.APP_DATA.candidates.length);
+
+        selectCandidate("lula");
+        assertTest("Seleção de candidato", document.querySelector('#candidate-list button[aria-pressed="true"]')?.textContent.includes("Lula"));
+
+        selectPriority("saude");
+        assertTest("Seleção de prioridade", document.querySelector("#selected-priorities").textContent.includes("Saúde"));
+        assertTest("Resumo de comparação renderizado", document.querySelector("#comparison-summary").classList.contains("results-grid"));
+        assertTest("Matriz renderizada", document.querySelector("#matrix-container table") !== null);
+        assertTest("Detalhe aprofundado renderizado", document.querySelector("#comparison-detail").textContent.includes("Leitura da comparação"));
+
+        selectPriority("educacao");
+        reorderPriorities("educacao", -1);
+        assertTest("Reordenação de prioridade", document.querySelector("#selected-priorities").textContent.trim().includes("Educação"));
+        removePriority("educacao");
+        assertTest("Remoção de prioridade", !document.querySelector("#selected-priorities").textContent.includes("Educação"));
+
+        const comparison = compareProposals("lula", "augusto-cury", "saude");
+        assertTest("Comparação conhecida", comparison.level === "alta", `Nível retornado: ${comparison.level}`);
+        assertTest("Score calculado", Number.isFinite(calculateScore("lula", "augusto-cury")));
+        assertTest("Classe de status", statusClass("alta") === "high");
+        assertTest("Badge de status", statusBadge("alta").includes("Alta convergência"));
+        assertTest("Candidato por ID", getCandidate("lula").name === "Lula");
+        assertTest("Categoria por ID", getCategory("saude").name === "Saúde");
+        assertTest("Propostas por candidato/tema", getCandidateProposals("lula", "saude").length >= 1);
+        assertTest("Fontes da comparação", getComparisonSources(comparison).length >= 2);
+        assertTest("Texto de profundidade", buildComparisonDepth(comparison, getCandidateProposals("lula", "saude")).length > 20);
+
+        updateSearch("tele");
+        assertTest("Busca textual", getFilteredProposals().some((proposal) => proposal.title.toLowerCase().includes("tele") || proposal.summary.toLowerCase().includes("tele")));
+
+        updateSearch("");
+        updateFilter("candidate", "lula");
+        updateFilter("category", "saude");
+        updateFilter("level", "alta");
+        const filtered = getFilteredProposals();
+        assertTest("Filtros combinados", filtered.some((proposal) => proposal.id === "lula-saude-001"));
+        assertTest("Cobertura renderizada", document.querySelector("#coverage-stats").textContent.includes("propostas catalogadas"));
+        assertTest("Visão por tema renderizada", document.querySelector("#theme-view").textContent.includes("Saúde"));
+        assertTest("Carrossel de temas renderizado", document.querySelectorAll("#theme-view .theme-tab").length === getThemeCategories().length);
+
+        const firstTheme = state.currentCategory;
+        moveTheme(1);
+        assertTest("Carrossel avança tema", state.currentCategory !== firstTheme && document.querySelector("#category-filter").value === state.currentCategory);
+
+        selectThemeCategory("saude");
+        assertTest("Carrossel seleciona tema específico", state.currentCategory === "saude" && document.querySelector("#theme-view").textContent.includes("Saúde"));
+
+        renderFilteredProposals();
+        toggleOriginal("original-lula-saude-001");
+        assertTest("Expansão do trecho original", document.querySelector("#original-lula-saude-001")?.hidden === false);
+        toggleOriginal("original-lula-saude-001");
+
+        const hadContrast = document.body.classList.contains("high-contrast");
+        toggleContrast();
+        assertTest("Alto contraste alterna estado", document.body.classList.contains("high-contrast") !== hadContrast);
+        toggleContrast();
+
+        assertTest("Botão de imprimir removido", typeof window.printAnalysis === "undefined");
+
+        renderTestResults();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        runTests();
+      });
+    </script>
+  </body>
+</html>
